@@ -11,10 +11,14 @@
         Estes estan formados por:
             Unha id: que nos indica a que elemento nos estamos areferir.
             Uns margin: que nos indican a que margenes se teñen que ceñir(en Android Estdio como minimpo necesitamos un vertical e outro horizontal.)
+                        estos a sua vez podense ceñirse a unha marxe, a outros elementos...
             Text: Para definir o contido dos diferentes elemtentos.
             Color: Para definir unha cor da letra, fondo...
             Wrap Content: Asigna a dimensión necesaria para axustarse ao contido do elemento.
+            Fill Parent: Asigna unha dimensión igual a o do padre que conten este elmento.
+   
     -->
+  
 
     <TextView
     android:id="@+id/textView1"

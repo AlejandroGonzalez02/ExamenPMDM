@@ -11,7 +11,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
-    val i=100
+    var i=100
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
     suspend fun cuenta() {
         while(i !=0){
         val contador: TextView = findViewById(R.id.contador)
-        contador.text = ("CONTADOR: "+(i-1))
+            i=i-1
+        contador.text = ("CONTADOR: "+(i))
             delay(1000L)
         }
     }

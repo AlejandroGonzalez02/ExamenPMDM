@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--OS atributos dos TextView son os que nos indican as caracteristicas e as peculiaridades de cada un.
+        Estes estan formados por:
+            Unha id: que nos indica a que elemento nos estamos areferir.
+            Uns margin: que nos indican a que margenes se teñen que ceñir(en Android Estdio como minimpo necesitamos un vertical e outro horizontal.)
+            Text: Para definir o contido dos diferentes elemtentos.
+            Color: Para definir unha cor da letra, fondo...
+            Wrap Content: Asigna a dimensión necesaria para axustarse ao contido do elemento.
+    -->
+
+    <TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="76dp"
+    android:layout_marginTop="98dp"
+    android:text="Este e  primeiro texto"
+    app:layout_constraintStart_toStartOf="@+id/guideline2"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="76dp"
+    android:layout_marginTop="58dp"
+    android:text="Este e  segundo texto"
+    app:layout_constraintStart_toStartOf="@+id/guideline2"
+    app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="76dp"
+    android:layout_marginTop="61dp"
+    android:text="Este e  terceiro texto"
+    app:layout_constraintStart_toStartOf="@+id/guideline2"
+    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="49dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
